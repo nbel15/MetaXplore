@@ -7,7 +7,7 @@ You can easily access MetaXplore here: http://metaxplore.eu
 
 
 <p align="center">
-  <img src="www/img/overview.png" height="50%" width="50%"></center> 
+  <img src="www/img/overview.png" height="60%" width="60%"></center> 
 </p>
 
 # Description of the content
