@@ -11,13 +11,13 @@ You can easily access MetaXplore here: http://metaxplore.eu
 </p>
 
 # Description of the content
-     **Folders:
-     - "analysis_functions": Contains the main functions of the downstream analysis (relative abundance, Alpha diversity, ....)
-     - "server_functions": Contains the server logic required for the analysis sections
-     - "www": Contains the guide sections in HTML format and the example files
+**Folders:
+ - "analysis_functions": Contains the main functions of the downstream analysis (relative abundance, Alpha diversity, ....)
+ - "server_functions": Contains the server logic required for the analysis sections
+ - "www": Contains the guide sections in HTML format and the example files
 
-     **Files:
-     - server.R: contains the server function definition, it is require the files saved in "server_functions" folder
-     - ui.R: contains the user interface definition
-     - tools_functions: contains six extra functions needed during the analysis
+ **Files:
+ - server.R: contains the server function definition, it is require the files saved in "server_functions" folder
+ - ui.R: contains the user interface definition
+ - tools_functions: contains six extra functions needed during the analysis
 	 
