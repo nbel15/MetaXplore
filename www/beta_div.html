@@ -1,0 +1,50 @@
+<p style="font-family:time" align="justify"><font size="3"> Beta-diversity quantifies the distances between different microbial profiles described by the OTUs table which allows to link the overall taxonomic diversity pattern to the experimental features. </p>
+
+<p style="font-family:time" align="justify"><font size="3"> Approches provided ny MetaXplore to calculate distances are:</p>
+<ul style="font-family:time" align="justify">
+	<li><b>GUnifrac:</b> Generalized Unifrac distance<sup>1</sup> (recommended) (required phylogenetic tree).</li>
+	<li><b>Weighted:</b> Most sensitive to detect change in abundant lineages (required phylogenetic tree).</li>
+	<li><b>Unweighted:</b> Most efficient in detecting abundance change in rare lineages (required phylogenetic tree).</li>
+        <li><b>VAW Unifrac:</b> Variance-adjusted weighted UniFrac distance is a powerful method when species/OTUs are not uniformly distributed between communities<sup>2</sup> (required phylogenetic tree).</li>
+        <li><b>Bray-Curtis:</b> Takes abundance into account and non-phylogeny based.</li>
+       </ul>
+<p style="font-family:time" align="justify"><font size="3"> Visualization of the multidimensional distance matrix in a space of two dimensions is performed by: </p>
+<ul style="font-family:time" align="justify">
+	<li>Principal Coordinate Analysis (PCoA) </li>
+	<li>Canonical Analysis of Principal coordinate (CAP)</li>
+	<li>Multi-Dimensional Scaling (MDS)</li>
+        <li>Non-metric Multi-Dimensional Scaling (NMDS)</li>
+	</ul>
+
+<h3 id= "user_interface">User Interface</h3>
+<p> 
+	<center>
+		<img src="img/betadiv.png"  alt= "Beta Diversity" style="width:80%;height:80%;" />
+	</center>
+	<ul style="font-family:time" align="justify">
+        	<li><b>A:</b> Dynamic Input</li>
+        	<li><b>B:</b> Ordination graph</li>
+        	<li><b>C:</b> Heatmap of paiwise PERMANOVA test</li>
+        	<li><b>D:</b> Customize graphs</li>
+		<li><b>E:</b> Download Current graphs in PDF or PNG format</li>
+	</ul>
+	  	        
+<h3 id= "user_interface">Options</h3>
+	<ul style="font-family:time" align="justify">
+		<li><b>Factor:</b> Select factor from the categorial variables in metadata file</li>
+		<li><b>Distance metrics:</b> Choose metrics to calculate the similarity/dissimilarity between the samples</li>
+		<li><b>Ordination:</b> Choose Ordnation method to visualze the calculated distances in two dimenssion</li>
+		<li><b>Permutations:</b> Number of permutations to conduct to assess the significance of the pseudo-F statistic (Default is 999)</li>
+		<li><b>m:</b> In case of CAP analysis the users are allowed to choose the number of axes analysed by discriminant analysis</li>
+       </ul>
+	  
+<h3 id= "user_interface">Output </h3>
+<ul style="font-family:time" align="justify">
+	<li><b>Beta diversity graph:</b> Graph of beta diversity based on the selected ditance method and the ordination. The resulted graph is annotated with p-values of the PERMANOVA test indicating the significance of group separations.</li>
+	<li><b>Pairewise Comparison:</b> Pairwise comparisons between groups. This is applied whenever more than two groups exist and the PERMANOVA test across all groups is significant.</li>
+        <li><b>Distance matrix:</b> Dissimilarity matrix calculated across all samples. The table is accessible from show table button.</li>
+	</ul>     
+
+<h3 id= "user_interface">References</h3>
+<p style="font-size:90%;"><b><sup>1</sup></b> Chen, Jun, et al. "Associating microbiome composition with environmental covariates using generalized UniFrac distances." Bioinformatics 28.16 (2012): 2106-2113.</p>
+<p style="font-size:90%;"><b><sup>2</sup></b> Chang, Qin, Yihui Luan, and Fengzhu Sun. "Variance adjusted weighted UniFrac: a powerful beta diversity measure for comparing communities based on phylogeny." BMC bioinformatics 12 (2011): 1-14.</p>

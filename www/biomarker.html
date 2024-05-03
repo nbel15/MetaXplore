@@ -1,0 +1,30 @@
+<p style="font-family:time" align="justify"><font size="3"> This section allows analysis allows the identification of specific taxa (known also as discriminant taxa) characterizing the differences between two or more experimental features, highlighting the potential indicators of diseases, treatment, or any environmental changes. The identification of discriminant taxa in MetaXplore was based of LEfSe algorithm <sup>1</sup> as implemented by MicrobiotaProcess R package <sup>2</sup>. The identification was based on two steps: initially, identification of taxa with significant differences in relation to the selected factor using on-parametric Kruskal-Wallis test. Then, the significant taxa are assessed by Linear Discriminant Analysis (LDA) to estimate the effect size of each taxon. The resulting output consists of a taxonomic tree listing all the taxa along with a bar chart highlighting the discriminative taxa according to the logarithmic LDA score (Effect Size) threshold.</p>
+	  
+<h3 id= "user_interface">User Interface</h3> 
+<center>
+	<img src="img/biomarker.png"  alt= "Biomarker discovery" style="width:70%;height:70%;" />
+</center>
+      
+<ul style="font-family:time" align="justify">
+	<li><b>A:</b> Dynamic Input </li>
+        <li><b>B:</b> Output: Taxonomic tree with barplot of dicriminant taxa (if exist) for each category  </li>
+	<li><b>C:</b> Download Current graph in PDF or PNG format  </li>
+</ul>
+	  
+<h3 id= "user_interface">Options </h3>
+<ul style="font-family:time" align="justify">
+        <li><b>Factor:</b> Select factor from the categorial variables in metadata file </li>
+        <li><b>Taxa level:</b> Select the taxomony level for the statiscal comparison and the visualization </li>
+        <li><b>LDA threshold</b> Linear discriminant analysis threshold, default ≥ 2.0 </li>
+	</ul>
+	  
+<h3 id= "user_interface">Output</h3>
+<ul style="font-family:time" align="justify">
+	<li><b>Diagram:</b> Taxonomic tree with barplot of dicriminant taxa (if exist) for each category</li>
+</ul>
+     	 
+<h3 id= "user_interface">References</h3>
+<p style="font-size:90%;"><b><sup>1</sup></b> Segata, Nicola, et al. "Metagenomic biomarker discovery and explanation." Genome biology 12 (2011): 1-18.</p>
+<p style="font-size:90%;"><b><sup>2</sup></b> Xu, Shuangbin, et al. "MicrobiotaProcess: A comprehensive R package for deep mining microbiome." The Innovation 4.2 (2023). </p>
+     	
+

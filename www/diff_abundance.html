@@ -1,0 +1,34 @@
+<p style="font-family:time" align="justify"><font size="3"> This section allows the analysis allows a systematic identification of the significant variation of OTUs between the assessed experimental condition. The statistical test was performed using nonparametric Kruskal-Wallis Rank Sum test (for group >2) followed by Wilcoxon Rank Sum tests for each paired group as implemented by microeco R package<sup>1</sup>. Users can choose the comparison category from the metadata list and the taxonomic level for comparison. To prevent comparisons of taxa that might not be relevant in the specific experimental condition (such as taxa with low relative abundance), Oplots provides the option to set a mean abundance threshold to filter out low-abundance taxa.  </p>
+
+<h3 id= "user_interface">User Interface</h3> 
+<center>
+	<img src="img/diffabund.png"  alt= "Differential abudance" style="width:70%;height:70%;" />
+</center>
+      
+<ul style="font-family:time" align="justify">
+	<li><b>A:</b> Dynamic Input </li>
+        <li><b>B:</b> Output: Result barplot with statistical test </li>
+	<li><b>C:</b> Customize barblot: Labels size and x.axis angle </li>
+	<li><b>D:</b> Download Current barplot in PDF or PNG format </li>
+</ul>
+	  
+<h3 id= "user_interface">Options </h3>
+<ul style="font-family:time" align="justify">
+        <li><b>Factor:</b> Select factor from the categorial variables in metadata file </li>
+        <li><b>Taxa level:</b> Select the taxomony level for the statiscal comparison </li>
+        <li><b>Rb. Threshold (%):</b> Select the minimum relative abundance threshold of taxon to include in the test (max=10%). </li>
+        <li><b>Select Taxon:</b> select a specific taxon to visualize in a barplot. </li>
+</ul>
+	  
+<h3 id= "user_interface">Output</h3>
+<ul style="font-family:time" align="justify">
+	<li><b>Barplot:</b> Bar plot of significant taxon with a pairwise comaprison based on the factor selected.</li>
+	<li><b>Differential abundance table:</b> Table of significant taxa in each comparisons with adjusted P-values. The table is accessible from show table button. </li>
+</ul>
+<center>
+      	<img src="img/diffabundtab.png"  alt= "Differential abundance table" style="width:60%;height:60%;" />
+</center>
+     	 
+<h3 id= "user_interface">References</h3>
+<p style="font-size:90%;"><b><sup>1</sup></b> Liu, Chi, et al. "microeco: an R package for data mining in microbial community ecology." FEMS microbiology ecology 97.2 (2021): fiaa255.</p>
+

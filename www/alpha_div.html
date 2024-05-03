@@ -1,0 +1,41 @@
+<p style="font-family:time" align="justify"><font size="3"> This section aims to estimate and visualize Alpha diversity (diversity among samples) based on selected indices. Diversity measures between groups are calculated using Pair-wise ANOVA. </p>
+<ul style="font-family:time" align="justify">
+	<li><b>Chao1 and ACE:</b> Mesures the species richness (total number of species in a sample) that is sensitive to rare OTUs (singletons and doubletons). Higher values indicate higher diversity. Chao1 is preferred when the expected observed richness is high, whereas ACE performs better in the case where the expected observed richness is low <sup>1</sup>.</li>
+        <li><b>Simpson:</b> Measures the probability that two individuals randomly selected from a sample will belong to the same species/OTUs (Ranges between 0 and 1. 1: represents infinite diversity and 0: represents no diversity)</li>
+	<li><b>Shannon:</b> Measures how evenly the microbes are distributed in a sample </li>
+        <li><b>Evenness:</b> Measure of the relative abundance of different species/OTUs making up the richness of a sample </li>
+        <li><b>PD:</b> Quantifies the total branch lengths between the observed species on a rooted phy-logenetic tree. This method required the uploading of phylogenetic tree.</li>
+	</ul>
+	  
+<h3 id= "user_interface">User Interface</h3> 
+<center>
+	<img src="img/alphadiv.png"  alt= "Alpha Diversity" style="width:70%;height:70%;" />
+</center>
+      
+<ul style="font-family:time" align="justify">
+	<li><b>A:</b> Dynamic Input </li>
+        <li><b>B:</b> Output: Result Boxplot </li>
+	<li><b>C:</b> Customize Boxplot: Labels size and x.axis angle </li>
+	<li><b>D:</b> Download Current Boxplot in PDF or PNG format </li>
+</ul>
+	  
+<h3 id= "user_interface">Options </h3>
+<ul style="font-family:time" align="justify">
+        <li><b>Factor:</b> Select factor from the categorial variables in metadata file </li>
+        <li><b>Change X-axis order:</b> Change the element's order of the selected factor</li>
+	<li><b>Indices:</b> Choose one or more alpha diversity indices</li>
+        <li><b>p-value cutoff:</b> p-value threshold for significance in ANOVA test</li>
+	</ul>
+	  
+<h3 id= "user_interface">Output</h3>
+<ul style="font-family:time" align="justify">
+	<li><b>Boxplot:</b> Boxplots of selected Alpha diversity indices. Significance groups are presented in the boxplot based on p-value threshold selected.</li>
+	<li><b>Alpha diversity indices:</b> Table of selectes indices (with standard error) for each group of samples (Image below). The table is accessible from show table button. </li>
+</ul>
+<center>
+      	<img src="img/alphadivtab.png"  alt= "Alpha Diversity" style="width:70%;height:70%;" />
+</center>
+     	 
+<h3 id= "user_interface">References</h3>
+<p style="font-size:90%;"><b><sup>1</sup></b> Basualdo, Carola V. "Choosing the best non-parametric richness estimator for benthic macroinvertebrates databases." Revista de la Sociedad Entomológica Argentina 70.1-2 (2011): 27-38.</p>
+
