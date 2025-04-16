@@ -122,7 +122,7 @@ otus.abund.filt <- function(physeq, abund.threshold){
 }
 
 ###############################################
-# filter by frequency input
+# Filter by frequency input
 ###############################################
   otus.freq.filter <- function(physeq, min.freq=0.001){
     otutab <- phyloseq::otu_table(physeq)
@@ -210,3 +210,16 @@ otus.abund.filt <- function(physeq, abund.threshold){
   
   return(physeq.norm)
 }
+
+###############################################
+# Replace special characters with underscores in  metadata
+###############################################
+# Function to replace special characters with underscores metadata
+  replace_special_chars <- function(x) {
+    if (is.character(x) || is.factor(x)) {
+      return(gsub("[^[:alnum:]_]", "_", as.character(x)))
+    } else {
+      return(x)
+    }
+  }
+  
