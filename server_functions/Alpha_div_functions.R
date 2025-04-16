@@ -1,5 +1,5 @@
 # MetaXplore Version 1.0
-# Last modified on 05/03/2024
+# Last modified on 14/04/2025
 # Author: Naima BEL MOKHTAR (Email: naima1503@gmail.com)
 ########################################################
 
@@ -105,7 +105,8 @@ alpha.div.plot.fun <- function(){
                       grouping_column = isolate(input$alpha.div.factor), 
                       pValueCutoff = isolate(input$alpha.pval.cutoff),
                       neword = isolate(input$alpha.div.new.order),
-                      changefac = isolate(input$alpha.div.change.order))
+                      changefac = isolate(input$alpha.div.change.order),
+                      sig_display = isolate(input$sig_display))
   
   p <- p + theme(text = element_text(family="serif"),
             axis.text = element_text(size =input$boxplot.columns.label.size),
