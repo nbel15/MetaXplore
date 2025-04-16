@@ -1,3 +1,7 @@
+# MetaXplore Version 1.0
+# Last modified on 14/04/2025
+# Author: Naima BEL MOKHTAR (Email: naima1503@gmail.com)
+########################################################
 alphatab <- tabItem(tabName = "alpha_tab",
                     box(
                       width = 12, title = "Alpha diversity parameters", collapsible = F, collapsed = F, solidHeader = T, status = "primary",
@@ -15,7 +19,12 @@ alphatab <- tabItem(tabName = "alpha_tab",
                                              "Simpson" = "simpson", "Shannon" = "shannon", 
                                              "Evenness" = "evenness", "PD"= "pd",
                                              "Simpson effecive" = "simpson_eff", "Shannon effective" = "shannon_eff"), 
-                                           selected = "simpson", multiple=TRUE, selectize=TRUE)
+                                           selected = "simpson", multiple=TRUE, selectize=TRUE),
+                               radioButtons(inputId = "sig_display", label = "Show significance:",
+                                 choices = c("None" = "none", "Letters" = "letters", "Lines" = "lines"),
+                                 selected = "lines",
+                                 inline = TRUE
+                               )
                         ),
                         column(width = 4, 
                                numericInput("alpha.pval.cutoff", "P-value cutoff",value =  0.05, min = 0.02, max = 1, step = 0.01),
